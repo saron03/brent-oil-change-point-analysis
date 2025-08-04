@@ -1,20 +1,72 @@
-# Task 1: Laying the Foundation for Brent Oil Price Analysis
+#  Brent Oil Price Change Point Analysis
 
-## Objective
-Establish a clear analysis plan and foundational understanding for applying change point detection to Brent oil price data.
+## Project Objective
+Analyze how major global events affect Brent oil prices using **Bayesian change point detection**. The goal is to help investors, policymakers, and energy companies understand how events like political decisions, sanctions, and OPEC policies cause price shifts.
 
-## Contents
-- *Brent Oil Dataset** (CSV): Daily historical prices
-- **Event Data** (CSV): Key geopolitical, economic, and OPEC-related events with dates
-- **Interim Report**: Describes the planned analysis steps and key assumptions
+---
 
-## Key Steps
-1. Define analysis workflow for Brent oil price data
-2. Compile structured event dataset (15+ key events)
-3. Analyze time series properties (trend, stationarity)
-4. Understand and explain change point models
-5. Identify assumptions, limitations, and the correlation vs. causation gap
-6. Plan communication formats (e.g., visual plots, reports)
+## Business Context
+You are a data scientist at **Birhan Energies**, a consultancy for the global energy sector. Your job is to:
+- Detect key events that caused major price changes
+- Quantify their impact on oil prices
+- Present results for smart investment, policy, and planning decisions
 
-## Output
-Prepared data, annotated plots, and a foundation for modeling structural changes in oil prices.
+---
+
+## Data Summary
+- **Brent Oil Prices** (Daily): From **May 1987 – Sep 2022**
+  - Fields: `Date`, `Price` (USD/barrel)
+- **Event Dataset**: 15+ geopolitical and economic events (e.g., OPEC cuts, conflicts)
+
+---
+
+## Workflow Overview
+
+### Task 1: Foundation
+- Define analysis steps and assumptions
+- Research and structure key global events
+- Analyze time series properties: trend, stationarity
+- Understand change point models
+
+### Task 2: Change Point Modeling
+- Use **PyMC3** to apply a Bayesian change point model
+- Detect structural breaks in oil prices
+- Link price shifts to real-world events
+- Quantify the effect (e.g., % change in price before vs. after event)
+
+### Task 3: Interactive Dashboard
+- Build a web app using **Flask (backend)** + **React (frontend)**
+- Display oil price trends, change points, and event impact
+- Add filters, date ranges, and interactive charts
+
+---
+
+## Key Concepts & Tools
+- **Bayesian Inference**
+- **Monte Carlo Markov Chain (MCMC)**
+- **Change Point Detection**
+- **Time Series Analysis**
+- **PyMC3**, **Pandas**, **Matplotlib**, **React**, **Flask**
+
+---
+
+## Timeline
+- Discussion: July 30, 2025
+- Interim Report Due: Aug 1, 2025
+- Final Submission: Aug 5, 2025
+
+---
+
+## Learning Outcomes
+- Model and interpret time series with change points
+- Link statistical findings to real-world causes
+- Build data apps that communicate insights clearly
+
+---
+
+
+## Final Deliverables
+- Structured Brent oil & event dataset (CSV)
+- Jupyter notebooks with full analysis
+- Dashboard app (Flask + React)
+- Clear, insight-focused report
