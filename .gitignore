@@ -1,3 +1,5 @@
 /data
-/env
+myenv
 .ipynb_checkpoints
+pymc3_env
+pymc4_env
