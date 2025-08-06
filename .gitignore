@@ -3,3 +3,6 @@ myenv
 .ipynb_checkpoints
 pymc3_env
 pymc4_env
+node_modules
+
+analysis_results
